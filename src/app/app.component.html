@@ -1,0 +1,22 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<button [disabled]="isDisabled" (click)="handleInput()">Click Me</button>
+<input type="text" (input)="handleChange($event)" />
+{{ myName }}
+
+<!-- here all the 3 are done - i.e interpolation , event binding , two way binding -->
+<br />
+<br />
+<br />
+<button (click)="toggleButton()">Show Passwords</button>
+<div *ngIf="isAuthorized">
+  <p>Confidential Information</p>
+  <p>Password1: 1234</p>
+  <p>Password2: 5678</p>
+</div>
+
+<button type="button" class="btn btn-primary">subhash</button>
+<br />
+<br />
+<button type="button" class="btn btn-primary">Primary</button>
